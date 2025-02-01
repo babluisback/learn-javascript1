@@ -31,8 +31,16 @@ let y= product(5, 6);
 console.log(y);
 //////////////////////////////
 function toCelcius(fahrenheit){
+  /*console.log("toCelcius string");*/
   return (5/9)*(fahrenheit - 32)
 }
 let value= toCelcius(100);
 console.log(value);
+///////////////////////////////
+//accessing a function not it's return value
+let value2= toCelcius;
+console.log(value2);
+console.log("the temprature is "+value+" Celsius");
+console.log("the temprature is "+toCelcius(77)+" Celsius");
+/////////////////////////////////////////////////////////////////////
 
