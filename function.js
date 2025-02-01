@@ -21,3 +21,18 @@ function start() {
    }
    const addition= sum();
    console.log(addition);
+   /////////////////////////////////////////////////////////////////
+   let x= product(3, 4);
+   function product(a, b){
+        return a*b;
+   }
+console.log(x);
+let y= product(5, 6);
+console.log(y);
+//////////////////////////////
+function toCelcius(fahrenheit){
+  return (5/9)*(fahrenheit - 32)
+}
+let value= toCelcius(100);
+console.log(value);
+
