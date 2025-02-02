@@ -43,4 +43,29 @@ console.log(value2);
 console.log("the temprature is "+value+" Celsius");
 console.log("the temprature is "+toCelcius(77)+" Celsius");
 /////////////////////////////////////////////////////////////////////
+function getName(o){
+  return o.model
+}
+const n1= getName("hello")
+const n2= getName(20)
+const n3= getName([10,20,30])
+const n4= getName({model:"2025",price:100})
+console.log({n1,n2,n3,n4});
 
+console.log("hello".x);
+let v =25;
+console.log(v.name);
+
+// {
+//   const p={name:"Bablu"};
+//   const n=getName(p);
+//   console.log(n);
+  
+// }
+function substraction(a,b){
+  const c =a-b;
+  return c;
+}
+let value3 =substraction;
+value3=(20,10);
+console.log(value3);
