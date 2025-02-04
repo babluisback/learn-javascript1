@@ -18,4 +18,3 @@ const val2=function stop(){
   if(x){
     console.log("false");
   }
-  else
