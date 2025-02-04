@@ -15,3 +15,7 @@ const val2=function stop(){
     }();
   console.log(val2);
   
+  if(x){
+    console.log("false");
+  }
+  else
