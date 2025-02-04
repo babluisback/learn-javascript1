@@ -7,3 +7,20 @@ function stop(){
     return x;
 }
 start();
+stop();
+const val1= stop;
+console.log(val1);
+const val2= stop();
+console.log(val2);
+const vehicle={type:"car",model:[2020,2021,2025],color:"Blue"}
+console.log(typeof(vehicle));
+console.log(vehicle.model[1]);
+console.log(vehicle);
+const vehicle2={type:"car",model:[2020,2021,2025],color:"Blue",val1,val2,
+    brake:function brake(){
+        const x=30;
+        // console.log("This is brake of car");
+        return x;
+    }
+}
+console.log(vehicle2);
