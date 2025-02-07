@@ -18,3 +18,20 @@ function isDevisibleByThree(num) {
   }
 }
 isDevisibleByThree(7);
+//////////////////////////////////////
+function isEven(num) {
+  if (num % 2 == 0) {
+    console.log("true");
+  } else {
+    console.log("false");
+  }
+}
+//////////////////////////////////////////
+function isDevisibleByThreeAndEven(num) {
+  if ((num % 3 === 0, num % 2 === 0)) {
+    console.log("number " + num + " is devisible by three and even");
+  } else {
+    console.log("number " + num + " is devisible by three but not even");
+  }
+}
+isDevisibleByThreeAndEven(7);
