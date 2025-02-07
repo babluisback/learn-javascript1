@@ -47,3 +47,52 @@ letter.forEach((item1) => {
   }
 });
 console.log(count1);
+////////////////// map() method ////////////////////////
+const num1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let doubleNumber2 = num1.map(double);
+
+function double(val, ind, arr) {
+  return val * 4;
+}
+console.log(doubleNumber2);
+
+function multiplyIndex(val, ind, arr) {
+  return val * ind;
+}
+let newIndexValue = num1.map(multiplyIndex);
+console.log(newIndexValue);
+
+///////////////////////////////////////////////
+let doubleNumber = num1.map((num2) => num2 * 2);
+console.log(doubleNumber);
+////////////////////////////////////////////////
+let doubleNumber1 = num1.map(function (num3) {
+  return num3 * 3;
+});
+console.log(doubleNumber1);
+///////////////////////////////////////////////////////////////
+let students = [
+  { name: "Alice", age: 22, grade: "A" },
+  { name: "Bob", age: 25, grade: "B" },
+  { name: "Charlie", age: 23, grade: "C" },
+];
+const onlyKey = students.map((key) => key.name);
+const onlyAge = students.map((age) => age.age);
+
+console.log(onlyKey);
+console.log(onlyAge);
+
+///////////////////////////////////////////////////////////////
+/*let numbers = [10, 20, 30, 40, 50];
+Practice:
+
+1-Print each number using forEach().
+2-Multiply each number by 2 using map().
+3-Filter numbers greater than 25 using filter()
+*/
+let numbers = [10, 20, 30, 40, 50];
+numbers.forEach((num4) => {
+  console.log(num4);
+});
+let numDouble = numbers.map((num5) => num5 * 2);
+console.log(numDouble);
